@@ -16,7 +16,7 @@ public class IdGenerator {
         String timePart = now.format(DateTimeFormatter.ofPattern("HHmmss"));
         String rand2 = randomAlphaNumeric(5);
 
-        return datePart + rand1 + timePart + rand2;
+        return type + datePart + rand1 + timePart + rand2;
     }
 
     private static String randomAlphaNumeric(int length) {
